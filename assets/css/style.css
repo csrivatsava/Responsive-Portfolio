@@ -1,0 +1,326 @@
+
+
+header, h2, h3 {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+body{
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-color: #ffffff;
+	width:960px;
+	margin-left: 157px;
+	margin-right: 157px;
+	padding-top:15px;
+	border-style:solid;
+	border-width: 1px;
+	border-color:#dddddd;
+	overflow: auto;
+	color:#777777;
+}
+
+header, h3{
+	font-size: 48px;
+	float: left;
+	background-color: #4aaaa5;
+	padding:10px;
+	color:#eee;
+	width:60%;
+}
+
+nav {
+  float: right;
+  margin-top: 25px;
+}
+/* Links on the navigation bar */
+.About, 
+.Contact, 
+.Portfolio{
+	float:left;
+	font-size: 20px;
+	margin: 20px 0px 20px 20px;
+	background-color: white;
+	color:#dddddd;
+	text-decoration: none;
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+.Portfolio, 
+.Contact{
+	padding-left: 10px;
+}
+.Contact{
+	padding-right: 10px;
+}
+#myname{
+	float: left;
+	width: 400px;
+	height: 90px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 90px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	background: #4aaaa5;
+}
+a:hover,
+#myname:hover{
+	color: blue;
+}
+
+.mainContent{
+	clear:both;
+	overflow: auto;
+	padding-top: 10px;
+	margin-top: 10px;
+	border-top: 2px solid #dddddd;
+	background-color: #ffffff
+	color:#777777;  
+	background-image: url("../../assets/images/restaurant.png")
+}
+.leftSide{
+	float:left;
+	overflow:auto;
+	background-color: white;
+	width:600px;
+	margin: 20px 10px;
+	border: 1px solid #dddddd;
+	border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+	text-align: justify;
+}
+.rightSide{
+	float:left;
+	background-color: white;
+	width:230px;
+	margin:20px 10px;
+	padding: 20px;
+	border: 1px solid #dddddd;
+
+}
+h2{
+	border-bottom: 2px solid #dddddd;
+	color:#4aaaa5;
+	padding:10px 10px 10px 0px;
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+img{
+	float:left;
+	margin: 0px 5px 5px 5px;
+}
+p{
+	margin-bottom: 10px;
+}
+
+/* Footer section to remain at the bottom of all the left and right content*/
+footer{
+	clear:both;
+	height:30px;
+	background-color: #666666;
+	margin-top: 20px;
+	text-align: center;
+	border-top: 7px solid #4aaaa5;
+	color:#eee;
+  	right: 277px;
+  	bottom: 0;
+  	left: 277px;
+  	padding: 1rem;
+  	overflow: none;
+	
+}
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+textarea{
+	height:200px;
+}
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+    color:blue;
+}
+
+label{
+	font-weight: bold;
+	padding-top: 20px;
+}
+
+.bold {
+    font-weight: bold;
+    font: 20px Arial;
+    text-align: center;
+    color: white;
+    padding-left: 60px;
+}
+
+#div1,#div3, #div5, #div7, #div9 {
+    position: relative;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    float:left;
+}
+
+#div2, #div4, #div6, #div8, #div10 {
+    /*opacity: 1;*/
+    clear:both;
+    position: absolute;
+    width: 220px;
+    bottom: 35px;
+    right:20px;
+    padding: 15px;
+    background-color: #4aaaa5;*/
+    text-align: center;
+    z-index: 1;
+}
+@media screen and (max-width: 1024px) {
+    body {
+        width:1000px;
+		/*margin:auto;*/
+		margin:0px;
+    }
+}
+/* Adding a media query related style allowing to follow the rules if max-width is 980px*/
+@media screen and (max-width: 980px) and (max-width: 1024px) {
+    body {
+        width:960px;
+		/*margin:auto;*/
+		margin:0px;
+    }
+}
+/* Adding a media query related style allowing to follow the rules if max-width is 768px*/
+@media screen and (max-width: 768px) {
+    body {
+		width:749px;
+		margin-right: -6px;
+		margin-left:0px;
+    }
+    .leftSide,
+    .rightSide{
+    	width:665px;
+    	margin:20px 30px;
+    }
+    .divisionImg{
+    	height: 300px;
+    	width:300px;
+    }
+    #div2, #div4, #div6, #div8, #div10 {
+    	width:270px;
+    }
+    .bold{
+    	padding-left: 80px;
+    }
+    #myname{
+    	width: 55%;
+    	/*font-size: 25px;*/
+    }
+    .About, 
+    .Contact, 
+    .Portfolio{
+    	float: left;
+    	margin-bottom: 10px;
+    	padding-left: 10px;
+    	padding-right: 0px;
+    }
+    .Contact{
+
+    }
+
+}
+/* Adding a media query related style allowing to follow the rules if max-width is 640px*/
+@media screen and (max-width: 640px) {
+    body{
+    	width:450px;
+    	margin-left:82px;
+    	margin-right: 82px;
+    }
+    .leftSide,
+    .rightSide{
+    	width:350px;
+    	margin:20px 30px;
+    }
+    .divisionImg{
+    	height: 330px;
+    	width:330px;
+    }
+    #div2, #div4, #div6, #div8, #div10 {
+    	width:300px;
+    }
+    .bold{
+    	padding-left: 90px;
+    }
+    #myname{
+    	width: 100%;
+    	line-height:60px;
+    	height:60px;
+
+    }
+    .About, .Contact, .Portfolio{
+    	margin-top: -10px;
+    	margin-bottom: 0px;
+    	padding-bottom: 10px;
+    	margin-right:45px;
+    	text-align: left;
+    	border: none;
+    }
+
+}
+/* Adding a media query related style allowing to follow the rules if max-width is 640px*/
+@media screen and (max-width: 480px) {
+    body{
+    	width:450px;
+    	margin-left:0px;
+    	margin-right: 0px;
+    }
+    .leftSide,
+    .rightSide{
+    	width:350px;
+    	margin:20px 30px;
+    }
+    .divisionImg{
+    	height: 330px;
+    	width:330px;
+    }
+    #div2, #div4, #div6, #div8, #div10 {
+    	width:300px;
+    }
+    .bold{
+    	padding-left: 90px;
+    }
+    #myname{
+    	width: 100%;
+    	line-height:60px;
+    	height:60px;
+
+    }
+    .About, .Contact, .Portfolio{
+    	margin-top: -10px;
+    	margin-bottom: 0px;
+    	padding-bottom: 10px;
+    	margin-right:45px;
+    	text-align: left;
+    	border: none;
+    }
+
+}
